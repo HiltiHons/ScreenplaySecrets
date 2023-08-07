@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family:"Poppins", sans-serif;
+}
+h1
+{
+    color: white;
+    display: flexbox;
+    position: left;
+}
+p
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+}
+
+.navbar
+{
+    overflow:hidden;
+    background-color: #10242B;
+    color:wheat;
+}
+.navbar a
+{
+    float: left;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+    background-color: #D16012;
+}
+.dropdown
+{
+    float: right;
+    overflow: hidden;
+}
+.dropdown .dropbtn
+{
+    font-size: 16px;
+    background-color: #10242B;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    margin: 0px;
+}
+.dropdown-content
+{
+    display: none;
+    position:absolute;
+
+}
+.dropdown-content a
+{
+    display:block;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.hero-image
+{
+    position: relative;
+    display: flex;
+    background-color: aliceblue;
+}
+.hero-image img
+{
+    width: 100%;
+}
+.text-overlay
+{
+    margin:40px;
+    border: 30px;
+    text-align: left;
+    position:absolute;
+    color: white;
+
+}
+.header
+{
+    display: flexbox;
+    text-align: center;
+    color:white;
+    margin: -5px;
+}
+.header img
+{
+    width: 100%;
+}
+footer a
+{
+    margin-left: 40px;
+    display: flex;
+    position: relative;
+    color:white;
+}
+.movies
+{
+    margin:10px;
+    display: inline-flex;   
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    background-color: #D16012;
+}
+.movies:hover, img
+{
+
+    animation: testmich;
+    animation-timing-function: ease;
+}
+@keyframes testmich {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+.registration
+{
+    text-align: right;
+
+    color: white;
+}
+
+.maincontainer
+{
+    overflow: hidden;
+}
+label
+{
+    color:white;
+}
+.mainform
+{
+    margin: 40px;
+}
