@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>ScreeenplaySecrets - Filme online sehen</title>
     <link rel="icon" type="image/favicon" href="/images/favicon.ico">
+
 </head>
     <body>
         <div class="navbar">
@@ -29,11 +30,36 @@
             <h1>Kontakt</h1>
 
             <form>
+                <label for="anrede">Anrede</label>
+                <select id="anrede">
+                    <option value="1">Herr</option>
+                    <option value="2" selected>Frau</option>
+                    <option value="3">Divers</option>
+                </select>
+                <br>
+                <br>
+
                 <label for="name">Name</label>
                 <input type="text" id="name">
+                <br>
+                <br>
 
-                <label for="message">Nachricht</label>
-                <textarea id="message"></textarea>
+            
+
+                <fieldset>
+                    <legend>type</legend>
+                    <label>
+                    <input type="radio" name="type" value="1" checked>
+                    Complaint
+                    </label>
+                    <br>
+                    <br>
+
+                    <label>
+                        <input type="radio" name="type" value="2">
+                        Suggestion
+                    </label>
+                </fieldset>
             </form>   
         </div>
 
