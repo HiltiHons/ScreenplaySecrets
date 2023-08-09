@@ -7,6 +7,8 @@
     <title>ScreeenplaySecrets - Filme online sehen</title>
     <link rel="icon" type="image/favicon" href="/images/favicon.ico">
 
+
+
 </head>
     <body>
         <div class="navbar">
@@ -31,18 +33,41 @@
 
             <form>
                 <label for="anrede">Anrede</label>
+                <br>
                 <select id="anrede">
                     <option value="1">Herr</option>
-                    <option value="2" selected>Frau</option>
+                    <option value="2" >Frau</option>
                     <option value="3">Divers</option>
+                    <option value="4"selected>   </option>
                 </select>
                 <br>
                 <br>
 
-                <label for="name">Name</label>
-                <input type="text" id="name">
+                <label for="lname">Nachname</label>
+                <br>
+                <input type="text" id="lname" autocomplete="given-name" size="40">
                 <br>
                 <br>
+
+                <label for="fname">Vorname</label>
+                <br>
+                    <input type="text" id="fname" autocomplete="family-name" size="40">
+                    <br>
+                    <br>
+
+                <label for="email">Email</label>
+                <br>
+                    <input type="text" id="email" autocomplete="email" size="40">
+                    <br>
+                    <br>
+                
+                <label for="repeatemail">Wiederholung</label>
+                <br>
+                    <input type="text" id="repeatemail" autocomplete="off" size="40">
+                    <br>
+                    <br>
+
+                
 
             
 
@@ -50,15 +75,24 @@
                     <legend>type</legend>
                     <label>
                     <input type="radio" name="type" value="1" checked>
-                    Complaint
+                    Basis mit Werbung
                     </label>
                     <br>
                     <br>
 
                     <label>
                         <input type="radio" name="type" value="2">
-                        Suggestion
+                        Basis-Abo
                     </label>
+                    <br>
+                    <br>
+
+                    <label>
+                        <input select type="radio" name="type" value="3">
+                        Standard-Abo
+                    </label>
+                    <br>
+                    <br>
                 </fieldset>
             </form>   
         </div>
