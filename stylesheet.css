@@ -13,16 +13,22 @@ p
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 body
 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000000;
+    background-color: black;
 }
-
+.midbar
+{
+    height: 200px;
+    background-color: #15051F;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(21,5,31,1) 100%);
+}
 .navbar
 {
     overflow:hidden;
-    background-color: #10242B;
+    background-color: #000000;
     color:wheat;
 }
 .navbar a
@@ -36,7 +42,7 @@ body
 }
 .navbar a:hover, .dropdown:hover .dropbtn
 {
-    background-color: #D16012;
+    background-color: #590F08;
 }
 .dropdown
 {
@@ -46,7 +52,7 @@ body
 .dropdown .dropbtn
 {
     font-size: 16px;
-    background-color: #10242B;
+    background-color: #0C0C0D;
     border: none;
     outline: none;
     color: white;
@@ -69,9 +75,9 @@ body
 }
 .hero-image
 {
-    position: relative;
     display: flex;
     background-color: aliceblue;
+    
 }
 .hero-image img
 {
@@ -86,8 +92,16 @@ body
     color: white;
 
 }
+.mcontainer
+{
+    border: #0C0C0D 20px solid;
+    border-radius: 45px;
+    padding-top: 15px;
+    background-color: #ffffff;
+}
 .header
 {
+    
     display: flexbox;
     text-align: center;
     color:white;
@@ -100,28 +114,26 @@ body
 footer a
 {
     margin-left: 40px;
-    display: flex;
     position: relative;
     color:white;
 }
 .movies
 {
-    margin:10px;
+    margin:15px;
     display: inline-flex;   
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    transform-origin: bottom;
-    background-color: #D16012;
+    transform-origin: center;
 }
-.movies:hover, img
-{
-
-    animation: testmich;
-    animation-timing-function: ease;
+.movies:hover
+{   
+    animation: testmich 0.8s    ;
+    animation-delay: 0.2s;
+    animation-timing-function:ease;
 }
 @keyframes testmich {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-50px); }
+    50%  { transform: translateY(-30px); }
     100% { transform: translateY(0); }
   }
 .registration
